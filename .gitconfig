@@ -1,3 +1,6 @@
 [user]
-	email = tlangohr@gmail.com
+	email = tla@bea.be
 	name = tla
+[core]
+	editor = emacs
+	
