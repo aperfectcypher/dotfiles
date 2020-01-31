@@ -1,5 +1,5 @@
 # Start tmux
-if [ "$TMUX" = "" ]; then tmux; fi
+if [ "$TMUX" = "" ]; then tmux attach; fi
 
 
 # If you come from bash you might have to change your $PATH.
