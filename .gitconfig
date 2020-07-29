@@ -9,4 +9,6 @@
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
+[alias]
+	l = log --oneline --decorate --color --graph --all
 
