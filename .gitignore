@@ -6,6 +6,7 @@
 !toprc
 !.zshrc
 !README.md
+!.spacemacs
 .cache/
 
 .config/autostart/
