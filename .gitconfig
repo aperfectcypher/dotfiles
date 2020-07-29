@@ -2,7 +2,7 @@
 	email = tla@bea.be
 	name = tla
 [core]
-	editor = emacs
+	editor = emacs -nw
 
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
@@ -11,4 +11,5 @@
 	clean = git-lfs clean -- %f
 [alias]
 	l = log --oneline --decorate --color --graph --all
-
+	s = status --show-stash
+	ds = diff --staged	
