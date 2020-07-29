@@ -1,3 +1,11 @@
-/*
+*
 !.gitignore
-!.*
+!.fonts
+!.config
+!.git*
+!toprc
+!.zshrc
+!README.md
+.cache/
+
+.config/autostart/
