@@ -2,6 +2,8 @@
 !.gitignore
 !.fonts
 !.config
+!.config/systemd
+!.config/systemd/*
 !.git*
 !toprc
 !.zshrc

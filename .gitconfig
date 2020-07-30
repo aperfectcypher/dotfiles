@@ -2,7 +2,7 @@
 	email = tla@bea.be
 	name = tla
 [core]
-	editor = emacs -nw
+	editor = emacs -Q
 
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
