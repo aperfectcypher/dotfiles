@@ -1,6 +1,8 @@
 # Start tmux
 tmux attach
 
+# Path to oh-my-zsh-custom folder
+  export ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -88,10 +90,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias em='emacs -nw'
-alias emacs='emacs -nw'
-alias gitl="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
-export BLEEDING=/var/www/toaster/poky/build-toaster-2/tmp/deploy/images/bea-peco-mk1/bea-image-beast-bea-peco-mk1.ext4
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

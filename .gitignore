@@ -7,6 +7,9 @@
 !.zshrc
 !README.md
 !.spacemacs
-.cache/
 
+!.oh-my-zsh-custom
+!.oh-my-zsh-custom/**
+
+.cache/
 .config/autostart/
