@@ -4,6 +4,9 @@
 !.config
 !.config/systemd
 !.config/systemd/*
+!.config/spotify-tui
+!.config/spotify-tui/config.yml
+
 !.git*
 !toprc
 !.zshrc
