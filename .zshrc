@@ -1,6 +1,8 @@
 # Start tmux
 tmux attach
 
+eval $(thefuck --alias)
+
 # Path to oh-my-zsh-custom folder
   export ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
 
@@ -13,7 +15,7 @@ tmux attach
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="bira"
+ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -57,7 +59,13 @@ ZSH_THEME="bira"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+    git-auto-fetch
+    colored-man-pages
+    command-not-found
+    thefuck
+    themes
+    )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -93,14 +101,14 @@ source $ZSH/oh-my-zsh.sh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/tla/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/tla/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/tla/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/tla/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/tla/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/tla/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/tla/anaconda3/bin:$PATH"
+        export PATH="/home/tla/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
