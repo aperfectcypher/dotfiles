@@ -65,11 +65,13 @@ plugins=(
     command-not-found
     thefuck
     themes
-    )
+    zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#666666,underline"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
