@@ -1,5 +1,3 @@
-# Start tmux
-tmux attach
 
 eval $(thefuck --alias)
 
