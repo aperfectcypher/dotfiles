@@ -98,6 +98,8 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#666666,underline"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias ls="exa"
+alias em="emacsclient --socket-name instance1 -c -nw"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -113,4 +115,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
