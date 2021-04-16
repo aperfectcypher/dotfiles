@@ -8,6 +8,8 @@
 !.config/spotify-tui/config.yml
 !.config/conky
 !.config/conky/conky.conf
+!.config/alacritty
+!.config/alacritty/alacritty.yml
 
 !.git*
 !toprc
