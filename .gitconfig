@@ -1,6 +1,7 @@
 [user]
 	email = tla@bea.be
 	name = tla
+	signingKey = EEDDECE3FC5DAA78A7387EE8D4B7C1A491FD8C10
 [core]
 	editor = emacs -Q -nw
 
@@ -15,3 +16,13 @@
 	ds = diff --staged	
 [pull]
 	rebase = false
+[tag]
+	forceSignAnnotated = true
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[color "status"]
+  changed = yellow
+  added = green
+  untracked = red
