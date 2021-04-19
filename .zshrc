@@ -77,17 +77,17 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#666666,underline"
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='em'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
+export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -100,6 +100,13 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#666666,underline"
 
 alias ls="exa"
 alias em="emacsclient --socket-name instance1 -c -nw"
+
+
+#if conda is installed on the system, remove the environement prompt
+conda -V $> /dev/null
+if [ $? -eq 0 ]; then
+    conda config --set changeps1 false 
+fi
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -115,3 +122,4 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
