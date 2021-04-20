@@ -101,13 +101,6 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 alias ls="exa"
 alias em="emacsclient --socket-name instance1 -c -nw"
 
-
-#if conda is installed on the system, remove the environement prompt
-conda -V $> /dev/null
-if [ $? -eq 0 ]; then
-    conda config --set changeps1 false 
-fi
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/tla/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -123,3 +116,9 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+#if conda is installed on the system, remove the environement prompt
+conda -V $> /dev/null
+if [ $? -eq 0 ]; then
+    conda config --set changeps1 false 
+fi
