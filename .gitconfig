@@ -1,6 +1,6 @@
 [user]
 	email = tla@bea.be
-	name = tla
+	name = TLA-BEA
 	signingKey = EEDDECE3FC5DAA78A7387EE8D4B7C1A491FD8C10
 [core]
 	editor = emacs -Q -nw
@@ -26,3 +26,5 @@
   changed = yellow
   added = green
   untracked = red
+[commit]
+	gpgsign = true
