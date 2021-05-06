@@ -28,3 +28,5 @@
   untracked = red
 [commit]
 	gpgsign = true
+[init]
+	defaultBranch = master
