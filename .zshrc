@@ -124,7 +124,7 @@ if [ $? -eq 0 ]; then
 fi
 
 #TMUX 
-session_name="default-session"
+session_name="def-sess"
 
 # 1. First you check if a tmux session exists with a given name.
 tmux has-session -t=$session_name 2> /dev/null
@@ -134,9 +134,9 @@ if [[ $? -ne 0 ]]; then
     TMUX='' tmux new-session -d -s "$session_name"
 fi
 
-# 3. Attach if outside of tmux, switch if you're in tmux.
+# 3. Attach if outside of tmux.
 if [[ -z "$TMUX" ]]; then
     tmux attach -t "$session_name"
-else
-    tmux switch-client -t "$session_name"
 fi
+
+export DISPLAY=:0.0
