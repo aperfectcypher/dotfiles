@@ -13,7 +13,45 @@ eval $(thefuck --alias)
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="spaceship"
+ ZSH_THEME="spaceship"
+ 
+  # Spaceship customization
+ 
+ SPACESHIP_PROMPT_ORDER=(
+   user          # Username section
+   dir           # Current directory section
+   host          # Hostname section
+   golang        # Go section
+   rust          # Rust section
+   docker        # Docker section
+   venv          # virtualenv section
+   conda         # conda virtualenv section
+   pyenv         # Pyenv section
+   kubectl       # Kubectl context section
+   exec_time     # Execution time
+   line_sep      # Line break
+   jobs          # Background jobs indicator
+   exit_code     # Exit code section
+   char          # Prompt character
+ )
+ 
+ SPACESHIP_RPROMPT_ORDER=(
+    git           # Git section (git_branch + git_status)
+ )
+ 
+ SPACESHIP_CHAR_SYMBOL='$ '
+ SPACESHIP_CHAR_SYMBOL_ROOT='# '
+# Number of folders of cwd to show in prompt, 0 to show all
+ SPACESHIP_DIR_TRUNC=4
+# While in git repo, show only root directory and folders inside it
+ SPACESHIP_DIR_TRUNC_REPO=false
+# Character to be shown before Docker versionCharacter to be shown before Docker version
+ SPACESHIP_DOCKER_SYMBOL='Docker '
+# The minimum number of seconds for showing execution time section
+ SPACESHIP_EXEC_TIME_ELAPSED=1
+# Show exit code of last command
+ SPACESHIP_EXIT_CODE_SHOW=true
+ SPACESHIP_EXIT_CODE_SYMBOL='✘ ' 
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
