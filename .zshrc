@@ -138,6 +138,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 alias ls="exa"
 alias em="emacsclient --socket-name instance1 -c -nw"
+alias msfconsole="msfconsole -x \"db_connect ${USER}@msf\""
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -163,13 +164,14 @@ fi
 
 #TMUX 
 session_name="def-sess"
+window_name="def_win"
 
 # 1. First you check if a tmux session exists with a given name.
 tmux has-session -t=$session_name 2> /dev/null
 
 # 2. Create the session if it doesn't exists.
 if [[ $? -ne 0 ]]; then
-    TMUX='' tmux new-session -d -s "$session_name"
+    TMUX='' tmux new-session -d -s "$session_name" -n "$window_name"
 fi
 
 # 3. Attach if outside of tmux.
