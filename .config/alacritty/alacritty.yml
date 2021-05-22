@@ -30,16 +30,16 @@ window:
   # must be at least `2`, while using a value of `0` for columns and lines will
   # fall back to the window manager's recommended size.
   dimensions:
-    columns: 100
-    lines: 40
+    columns: 160
+    lines: 45
 
   # Window position (changes require restart)
   #
   # Specified in number of pixels.
   # If the position is not set, the window manager will handle the placement.
   #position:
-  #  x: 0
-  #  y: 0
+    x: 5
+    y: 5
 
   # Window padding (changes require restart)
   #
@@ -176,11 +176,11 @@ font:
 draw_bold_text_with_bright_colors: true
 
 # Colors (Tomorrow Night)
-#colors:
+colors:
   # Default colors
-  #primary:
-  #  background: '#1d1f21'
-  #  foreground: '#c5c8c6'
+  primary:
+    background: '#060606'
+    foreground: '#c5c8c6'
 
     # Bright and dim foreground colors
     #
@@ -197,9 +197,9 @@ draw_bold_text_with_bright_colors: true
   #
   # Allowed values are CellForeground and CellBackground, which reference the
   # affected cell, or hexadecimal colors like #ff00ff.
-  #cursor:
-  #  text: CellBackground
-  #  cursor: CellForeground
+  cursor:
+    text: '#009688'
+    cursor: '#009688'
 
   # Vi mode cursor colors
   #
@@ -313,14 +313,14 @@ bell:
   #   - EaseOutExpo
   #   - EaseOutCirc
   #   - Linear
-  animation: EaseOutExpo
+  animation: EaseOutQuint
 
   # Duration of the visual bell flash in milliseconds. A `duration` of `0` will
   # disable the visual bell animation.
-  duration: 0
+  duration: 10
 
   # Visual bell animation color.
-  color: '#ffffff'
+  color: '#009688'
 
   # Bell Command
   #
@@ -339,7 +339,7 @@ bell:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.9
+background_opacity: 0.96
 
 selection:
   # This string contains all characters that are used as separators for
@@ -347,7 +347,7 @@ selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
   # When set to `true`, selected text will be copied to the primary clipboard.
-  save_to_clipboard: false
+  save_to_clipboard: true
 
 cursor:
   # Cursor style
@@ -367,7 +367,7 @@ cursor:
     #   - Off: Disable blinking by default
     #   - On: Enable blinking by default
     #   - Always: Force the cursor to always blink
-    #blinking: Off
+    blinking: Off
 
   # Vi mode cursor style
   #
