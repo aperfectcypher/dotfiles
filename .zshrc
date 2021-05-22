@@ -155,6 +155,8 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# /bin override for this host
+export PATH="$HOME/bin/$HOST:$PATH"
 
 #if conda is installed on the system, remove the environement prompt
 conda -V $> /dev/null
