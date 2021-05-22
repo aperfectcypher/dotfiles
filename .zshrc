@@ -114,12 +114,6 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#666666,underline"
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='em'
-fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -155,8 +149,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# /bin override for this host
-export PATH="$HOME/bin/$HOST:$PATH"
 
 #if conda is installed on the system, remove the environement prompt
 conda -V $> /dev/null
