@@ -5,5 +5,5 @@ export PATH="$HOME/bin:$HOME/bin/$HOST:$PATH"
 if [[ -n $SSH_CONNECTION ]]; then
     export EDITOR='vim'
 else
-    export EDITOR='em'
+    export EDITOR='nano'
 fi
