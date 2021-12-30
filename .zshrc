@@ -1,6 +1,4 @@
 
-eval $(thefuck --alias)
-
 # Path to oh-my-zsh-custom folder
   export ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
 
