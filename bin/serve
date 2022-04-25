@@ -1,0 +1,2 @@
+#!/bin/sh
+/usr/bin/env python -m http.server 80
